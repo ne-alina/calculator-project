@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿// Calculator: basic arithmetic operations + power function
+#include <iostream>
 #include <stdexcept>
 #include <cmath>
 
