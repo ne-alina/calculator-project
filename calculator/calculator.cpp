@@ -27,11 +27,15 @@ double divide(double a, double b) {
 }
 
 // Возведение в степень
-double power(double base, double exp) {
-    if (std::isnan(std::pow(base, exp))) {
+// Возведение в степень с обработкой граничных случаев
+double power(double base, double exponent) {
+    if (base < 0 && std::fmod(exponent, 1.0) != 0) {
+        throw std::invalid_argument("Negative base with fractional exponent");
+    }
+    if (std::isnan(std::pow(base, exponent))) {
         throw std::invalid_argument("Result is NaN");
     }
-    return std::pow(base, exp);
+    return std::pow(base, exponent);
 }
 
 int main() {
