@@ -39,7 +39,7 @@ double power(double base, double exponent) {
 }
 
 int main() {
-    std::cout << "Calculator v1.0" << std::endl;
+    std::cout << "Calculator v2.0" << std::endl;
     std::cout << "2 + 3 = " << add(2, 3) << std::endl;
     std::cout << "10 - 4 = " << subtract(10, 4) << std::endl;
     std::cout << "3 * 5 = " << multiply(3, 5) << std::endl;
